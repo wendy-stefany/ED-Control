@@ -1,0 +1,23 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset='utf-8' >
+        <link rel="stylesheet" type="text/css" href="css.css" >
+ <title>Actualizar Colaborador</title>
+
+    </head>
+<body>
+</br>
+  <h2>Actualizar Colaborador</h2>
+<div>
+  <form action="actualizar_colaborador.php" method="post">
+      	<input name="num" type="num" placeholder="Numero identificador" required />
+				<input name="nombre" type="text" placeholder="Nombre" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus/>
+				<input name="apellido" type="text" placeholder="Apellido" required />
+				<textarea name="habilidad" placeholder="Habilidades" rows="6" required></textarea>
+				<button id="alta" name="alta" type="submit" class="btn">Actualizar</button>
+</form>
+  <div>
+
+  </body>
+</html>

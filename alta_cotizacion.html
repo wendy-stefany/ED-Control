@@ -1,0 +1,25 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset='utf-8' >
+        <link rel="stylesheet" type="text/css" href="css.css" >
+ <title>Cotizacion</title>
+
+    </head>
+<body>
+</br>
+  <h2>Cotizacion</h2>
+<div>
+
+  <form action="alta_cotizacion.php" method="post">
+			<input name="Incidencia" type="text" placeholder="Numero Incidencia" maxlength="30" required />
+			<input name="Tiempo" type="text" placeholder="Tiempo de Entrega"  required/>
+      <input name="Material" type="text" placeholder="Cantidad Material" maxlength="30" pattern="[a-zA-Z0-9]+" required/>
+      <input name="Costo" type="text" placeholder="Costo Unitario"  required/>
+      <textarea name="Concepto" placeholder="Concepto" rows="6" required></textarea>
+      <button id="alta" name="Siguiente" type="submit" class="btn">Registrar</button>
+</form>
+
+  <div>
+
+  </body>

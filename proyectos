@@ -1,0 +1,30 @@
+<?php $query ="select *from usuarios";//esta
+$resultado=pg_query($conexion,$query) or die ("Error en la consulta");//y esta linea es practicamente el query
+$query ="select usuario from ejemplo where usuario='wendy'";
+$nr=pg_num_rows($resultado);
+if($nr>0){
+  echo "<table borde=1 bgcolor=skyblue>
+        <tr><td>Usuario</td><td>Contraseña</td><tr>";
+        while ($filas=pg_fetch_array($resultado)) {
+          echo"<tr><td>".$filas["usuarios"]."</td>";
+          echo"<td>".$filas["contraseña"]."</td></tr>";
+        }echo"</table>";
+}else {
+  echo "No hay resultados"; }
+
+  ?>
+  <?php $query ="select *from usuarios";//esta
+  $resultado=pg_query($conexion,$query) or die ("Error en la consulta");//y esta linea es practicamente el query
+  $query ="select usuario from ejemplo where usuario='wendy'";
+  $nr=pg_num_rows($resultado);
+  if($nr>0){
+    echo "<table borde=1 bgcolor=skyblue>
+          <tr><td>Usuario</td><td>Contraseña</td><tr>";
+          while ($filas=pg_fetch_array($resultado)) {
+            echo"<tr><td>".$filas["usuarios"]."</td>";
+            echo"<td>".$filas["contraseña"]."</td></tr>";
+          }echo"</table>";
+  }else {
+    echo "No hay resultados"; }
+
+    ?>

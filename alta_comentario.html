@@ -1,0 +1,23 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset='utf-8' >
+        <link rel="stylesheet" type="text/css" href="css.css" >
+ <title>Comentario</title>
+
+    </head>
+<body>
+</br>
+  <h2>Hacer Comentario</h2>
+<div>
+
+  <form action="alta_comentario.php" method="post">
+				<input name="proyecto" type="text" placeholder="#Proyecto" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus/>
+				<input name="colaborador" type="text" placeholder="#Colaborador" required />
+        <input name="fecha" type="date" placeholder="Fecha" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus/>
+				<textarea name="contenido" placeholder="Contenido" rows="6" required></textarea>
+				<button id="alta" name="alta" type="submit" class="btn">Guardar</button>
+</form>
+  <div>
+
+  </body>

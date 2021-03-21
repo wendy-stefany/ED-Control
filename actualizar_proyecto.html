@@ -1,0 +1,45 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset='utf-8' >
+        <link rel="stylesheet" type="text/css" href="css.css" >
+ <title>Alta Proyecto</title>
+
+    </head>
+<body>
+</br>
+  <h2>Actualizar Proyecto</h2>
+<div>
+  <form action="actualizar_proyecto.php" method="post">
+        <h3>NUMERO PROYECTO</h3>
+        <input name="num_proyecto" type="num" placeholder="NUMERO PROYECTO" required />
+        <h3>FECHA LEVANTAMIENTO</h3>
+        <input name="fecha_levantamiento" type="date" placeholder="fecha_levantamiento" rows="6" required/>
+        <h3>NUMERO CAPTADOR</h3>
+				<input name="num_captador" type="num" placeholder="NUMERO CAPTADOR" required />
+        <h3>NUMERO SUPERVISOR</h3>
+				<input name="num_supervisor" type="num" placeholder="NUMERO SUPERVISOR" rows="6" required/>
+        <h3>ESTADO</h3>
+        <select name="estado" >
+           <option selected value="0"> Elige una opción </option>
+          <option value="terminado">Terminado</option>
+          <option value="curso">Activo</option>
+        </select>
+        <h3>AUTORIZADO</h3>
+        <select name="autorizado" required>
+           <option selected value="0"> Elige una opción </option>
+          <option value="Si">Si</option>
+          <option value="No">No</option>
+        </select>
+        <h3>FECHA DE INICIO</h3>
+				<input name="fecha_inicio" type="date" />
+        <h3>FECHA DE FINALIZACION</h3>
+				<input name="fecha_finalizacion" type="date" placeholder="Habilidades" rows="6" />
+        <h3>FECHA DE RECHAZO</h3>
+        <input name="fecha_rechazo" type="date" placeholder="Habilidades" rows="6" />
+				<button id="alta" name="alta" type="submit" class="btn">Actualizar</button>
+</form>
+  <div>
+
+  </body>
+</html>

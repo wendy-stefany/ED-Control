@@ -1,0 +1,26 @@
+<Doctype html>
+<html>
+    <head>
+        <meta charset='utf-8' >
+        <link rel="stylesheet" type="text/css" href="css.css" >
+ <title>Actualizar Cotizacion</title>
+
+    </head>
+<body>
+</br>
+  <h2>Actualizar Cotizacion</h2>
+<div>
+  <form action="actualizar_material_mas.php" method="post">
+     <input name="Num" type="text" placeholder="Numero Proyecto" maxlength="30" required />
+      <input name="Material" type="text" placeholder="Cantidad Material" maxlength="30" pattern="[a-zA-Z0-9]+" required/>
+      <input name="Costo" type="text" placeholder="Costo Unitario"  required/>
+      <textarea name="Concepto" placeholder="Concepto" rows="6" required></textarea>
+      <button id="alta" name="Siguiente" type="submit" class="btn">Actualizar</button>
+</form>
+<form action="index.php" method="post">
+    <button id="alta" name="Siguiente" type="submit" class="btn">Terminar</button>
+</form>
+  <div>
+
+  </body>
+</html>
